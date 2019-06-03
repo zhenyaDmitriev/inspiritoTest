@@ -1,0 +1,158 @@
+body {
+	color: #999;
+	font: 100%/1.5em sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+}
+
+input {
+    border: none;
+	font-family: inherit;
+	font-size: inherit;
+	margin: 0;
+	outline: none;
+}
+
+.val_err {
+    padding: 5px 20px;
+    color: red;
+    font-size: 15px;
+}
+
+#registration-form {
+	margin: 150px auto;
+	width: 300px;
+}
+
+#registration-form h1 {
+	background-color: #282830;
+	border-radius: 5px 5px 0 0;
+	color: #fff;
+	font-size: 14px;
+    letter-spacing: 2px;
+	padding: 20px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#registration-form fieldset {
+	background-color: #eee;
+    border: none;
+    margin: 0;
+	border-radius: 0 0 5px 5px;
+	padding: 20px;
+}
+
+#registration-form input {
+	font-size: 14px;
+    border: 1px solid #dcdcdc;
+	padding: 12px 10px;
+    margin-bottom: 5px;
+	width: 238px;
+}
+
+.fieldset-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#registration-form button {
+    width: 120px;
+	background-color: #1dabb8;
+	border-radius: 3px;
+	color: #fff;
+	font-weight: bold;
+	padding: 12px 20px;
+    border: none;
+	font-family: inherit;
+	font-size: inherit;
+	margin: 0;
+	outline: none;
+    cursor: pointer;
+}
+
+#registration-form button:hover { 
+    background: #198d98;
+}
+
+.fieldset-dropdown {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 28px;
+    width: 258px;
+    background: #f2f2f2;
+    border: 1px solid;
+    border-color: white #f7f7f7 whitesmoke;
+    border-radius: 3px;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.06));
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+    margin-bottom: 5px;
+}
+  
+.fieldset-dropdown:before, .fieldset-dropdown:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 9px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 4px dashed;
+    border-color: #888888 transparent;
+    pointer-events: none;
+}
+  
+.fieldset-dropdown:before {
+    border-bottom-style: solid;
+    border-top: none;
+}
+  
+.fieldset-dropdown:after {
+    margin-top: 7px;
+    border-top-style: solid;
+    border-bottom: none;
+}
+  
+.fieldset-dropdown-select {
+    position: relative;
+    width: 130%;
+    margin: 0;
+    padding: 6px 8px 6px 10px;
+    height: 28px;
+    line-height: 15px;
+    font-size: 13px;
+    font-weight: 550;
+    color: #62717a;
+    text-shadow: 0 1px white;
+    background: #f2f2f2;
+    border: 0;
+    border-radius: 0;
+    cursor: pointer;
+}
+  
+.fieldset-dropdown-select:focus {
+    z-index: 3;
+    width: 100%;
+    color: #394349;
+    outline: 2px solid #49aff2;
+    outline-offset: -2px;
+    outline: none;
+}
+  
+.fieldset-dropdown-select option {
+    margin: 3px;
+    padding: 6px 8px;
+    text-shadow: none;
+    background-color: #f2f2f2;
+    border-radius: 3px;
+    font-size: 13px;
+    cursor: pointer;
+    outline: none;
+}

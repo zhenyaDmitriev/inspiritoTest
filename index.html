@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <button onclick="getData()">load data</button>
+    
+    <div id="registration-form">
+        <h1>Registration form</h1>
+
+        <fieldset>
+            <form onSubmit="return formValidation()" id="form">
+                <input type="text" id="name" placeholder="Name" required>
+                <div id="name_err" class="val_err"></div>
+                <input type="text" id="address" placeholder="Address 1" required>
+                <div id="address_err" class="val_err"></div>
+                <input type="text" class="address" placeholder="Address 2">
+                <div id="address_err" class="val_err"></div>
+                <input type="text" id="city" placeholder="City" required>
+                <div id="city_err" class="val_err"></div>
+                <div class="fieldset-dropdown">
+                    <select id="state" class="fieldset-dropdown-select">
+                        <option selected disabled>Select state</option>
+                        <option value="lviv">Lviv</option>
+                        <option value="kyiv">Kyiv</option>
+                    </select>                    
+                </div>
+                <div id="state_err" class="val_err"></div>
+                
+                <input type="text" id="zip" placeholder="Zip Code" required>
+                <div id="zip_err" class="val_err"></div>
+                
+                <div class="fieldset-buttons">
+                    <button type="submit">OK</button>
+                    <button type="button" onclick="resetForm()">CANCEL</button>
+                </div>
+            </form>
+        </fieldset>
+
+    </div>
+    
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
